@@ -23,21 +23,166 @@
 </head>
 <body>
 
-    <div>
-        <section class="sidebar">
-
-        </section>
-        
-        <div class="content">
-            <header class="header"></header>
-            <main class="main"></main>
+<div class="parent" x-data="toggleSidebar">
+    <section x-cloak class="sidebar" :class="{'close': !open}">
+        <div class="sidebar-header d-flex align-items-center justify-content-between justify-content-lg-center">
+            <h3 class="fw-bold my-0">AmirWeb</h3>
+            <button class="close-sidebar-btn btn btn-lg btn-close" @click="toggle"></button>
         </div>
+
+        <ul class="sidebar__list mt-4">
+            <li class="sidebar__item sidebar__item-active">
+                <a href="index.html" class="sidebar__link  d-flex align-items-center">
+                    <i class="bi bi-grid-fill"></i>
+                    <span class="ms-2">داشبورد</span>
+                </a>
+            </li>
+            <li class="sidebar__item" x-data="{open: false}">
+                <div class="sidebar__link d-flex align-items-center pointer" @click="open = !open">
+                    <i class="bi bi-shop"></i>
+                    <span class="ms-3">فروشگاه</span>
+                    <i class="bi bi-chevron-down ms-auto fs-7"></i>
+                </div>
+                <ul class="sidebar__sublist" x-show="open" x-transition>
+                    <li class="sidebar__subMenu-Item">
+                        <a href="#" class="sidebar__subMenu-link">
+                            <span class="ms-3">لیست فروشگاه‌ها</span>
+                        </a>
+                    </li>
+                    <li class="sidebar__subMenu-Item">
+                        <a href="#" class="sidebar__subMenu-link">
+                            <span class="ms-3">ایجاد فروشگاه</span>
+                        </a>
+                    </li>
+                    <li class="sidebar__subMenu-Item">
+                        <a href="#" class="sidebar__subMenu-link">
+                            <span class="ms-3">ویرایش فروشگاه</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="sidebar__item" x-data="{open: false}">
+                <div class="sidebar__link d-flex align-items-center pointer" @click="open = !open">
+                    <i class="bi bi-box-seam"></i>
+                    <span class="ms-3">محصولات</span>
+                    <i class="bi bi-chevron-down ms-auto fs-7"></i>
+                </div>
+                <ul class="sidebar__sublist" x-show="open" x-transition>
+                    <li class="sidebar__subMenu-Item">
+                        <a href="#" class="sidebar__subMenu-link">
+                            <span class="ms-3">لیست محصولات</span>
+                        </a>
+                    </li>
+                    <li class="sidebar__subMenu-Item">
+                        <a href="#" class="sidebar__subMenu-link">
+                            <span class="ms-3">ایجاد محصول</span>
+                        </a>
+                    </li>
+                    <li class="sidebar__subMenu-Item">
+                        <a href="#" class="sidebar__subMenu-link">
+                            <span class="ms-3">ویرایش محصول</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="sidebar__item" x-data="{open: false}">
+                <div class="sidebar__link d-flex align-items-center pointer" @click="open = !open">
+                    <i class="bi bi-basket-fill"></i>
+                    <span class="ms-3">سفارشات</span>
+                    <i class="bi bi-chevron-down ms-auto fs-7"></i>
+                </div>
+                <ul class="sidebar__sublist" x-show="open" x-transition>
+                    <li class="sidebar__subMenu-Item">
+                        <a href="#" class="sidebar__subMenu-link">
+                            <span class="ms-3">لیست سفارشات</span>
+                        </a>
+                    </li>
+                    <li class="sidebar__subMenu-Item">
+                        <a href="#" class="sidebar__subMenu-link">
+                            <span class="ms-3">سفارشات تایید شده</span>
+                        </a>
+                    </li>
+                    <li class="sidebar__subMenu-Item">
+                        <a href="#" class="sidebar__subMenu-link">
+                            <span class="ms-3">سفارشات تأیید نشده</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="sidebar__item" x-data="{open: false}">
+                <a href="index.html" class="sidebar__link d-flex align-items-center" @click="open = !open">
+                    <i class="bi bi-percent"></i>
+                    <span class="ms-3">تخفیف‌ها</span>
+                </a>
+            </li>
+            <li class="sidebar__item">
+                <a href="index.html" class="sidebar__link d-flex align-items-center">
+                    <i class="bi bi-chat-right-dots-fill"></i>
+                    <span class="ms-3">تیکت‌ها</span>
+                </a>
+            </li>
+            <li class="sidebar__item" x-data="{open: false}">
+                <div class="sidebar__link d-flex align-items-center pointer" @click="open = !open">
+                    <i class="bi bi-people-fill"></i>
+                    <span class="ms-3">کاربران</span>
+                    <i class="bi bi-chevron-down ms-auto fs-7"></i>
+                </div>
+                <ul class="sidebar__sublist" x-show="open" x-transition>
+                    <li class="sidebar__subMenu-Item">
+                        <a href="#" class="sidebar__subMenu-link">
+                            <span class="ms">لیست کاربران</span>
+                        </a>
+                    </li>
+                    <li class="sidebar__subMenu-Item">
+                        <a href="#" class="sidebar__subMenu-link">
+                            <span class="ms">ایجاد کاربران</span>
+                        </a>
+                    </li>
+                    <li class="sidebar__subMenu-Item">
+                        <a href="#" class="sidebar__subMenu-link">
+                            <span class="ms">ویرایش کاربران</span>
+                        </a>
+                    </li>
+                </ul>
+
+            </li>
+            <li class="sidebar__item" x-data="{open: false}">
+                <div class="sidebar__link d-flex align-items-center pointer" @click="open = !open">
+                    <i class="bi bi-chat-dots-fill"></i>
+                    <span class="ms-3">کامنت‌ها</span>
+                    <i class="bi bi-chevron-down ms-auto fs-7"></i>
+                </div>
+                <ul class="sidebar__sublist" x-show="open" x-transition>
+                    <li class="sidebar__subMenu-Item">
+                        <a href="#" class="sidebar__subMenu-link">
+                            <span class="ms-3">لیست کامنت‌ها</span>
+                        </a>
+                    </li>
+                    <li class="sidebar__subMenu-Item">
+                        <a href="#" class="sidebar__subMenu-link">
+                            <span class="ms-3">کامنت‌های تأیید شده</span>
+                        </a>
+                    </li>
+                    <li class="sidebar__subMenu-Item">
+                        <a href="#" class="sidebar__subMenu-link">
+                            <span class="ms-3">کامنت‌های تأیید نشده</span>
+                        </a>
+                    </li>
+                </ul>
+
+            </li>
+
+        </ul>
+    </section>
+
+    <div class="content" :class="{'full-width': !open}">
+        <header class="header">
+            <i class="bi bi-justify fs-1 pointer" @click="toggle"></i>
+        </header>
+        <main class="main">
+        </main>
     </div>
-
-
-
-
-
+</div>
 
 
 <!-- bootstrap -->
@@ -45,5 +190,6 @@
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
 
+<script src="assets/js/index.js"></script>
 </body>
 </html>
