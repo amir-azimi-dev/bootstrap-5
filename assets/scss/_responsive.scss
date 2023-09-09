@@ -1,3 +1,32 @@
+@media all and (max-width: 340px) {
+  .parent {
+    .content {
+      .header {
+
+        &.full-width {
+          margin-right: 0;
+        }
+
+        .header__item {
+          margin-right: 0.5rem !important;
+
+          .dropdown-toggle::after {
+            display: none !important;
+          }
+
+          .header__profile {
+            .header__profile-img-container {
+              width: 2rem !important;
+              height: 2rem !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
 @media all and (min-width: 992px) {
   .parent {
     .sidebar {
@@ -10,7 +39,6 @@
 
     .content {
       margin-right: 15.65rem;
-      padding: 2rem;
 
       &.full-width {
         margin-right: 0;

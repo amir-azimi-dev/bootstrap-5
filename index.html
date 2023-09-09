@@ -176,10 +176,79 @@
     </section>
 
     <div class="content" :class="{'full-width': !open}">
-        <header class="header">
-            <i class="bi bi-justify fs-1 pointer" @click="toggle"></i>
+        <header class="header d-flex justify-content-between align-items-center">
+            <div class="header__item">
+                <i class="bi bi-justify fs-1 pointer" @click="toggle"></i>
+            </div>
+
+            <div class="header__wrapper d-flex align-items-center">
+                <div class="header__item dropdown d-flex align-items-center">
+                    <i class="dropdown-toggle bi bi-envelope text-muted fs-4 pointer position-relative"
+                       data-bs-toggle="dropdown">
+                        <span class="header__badge position-absolute d-flex justify-content-center align-items-center rounded-circle fw-bold">104</span>
+                    </i>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item fs-7" href="#">لورم ایپسوم</a></li>
+                        <li><a class="dropdown-item fs-7" href="#">لورم ایپسوم متن</a></li>
+                        <li><a class="dropdown-item fs-7" href="#">لورم ایپسوم متن ساختگی</a></li>
+                    </ul>
+                </div>
+                <div class="header__item ms-4">
+                    <div class="header__item dropdown d-flex align-items-center">
+                        <i class="dropdown-toggle bi bi-bell text-muted fs-4 pointer position-relative"
+                           id="" data-bs-toggle="dropdown">
+                        </i>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item fs-7" href="#">لورم ایپسوم</a></li>
+                            <li><a class="dropdown-item fs-7" href="#">لورم ایپسوم متن</a></li>
+                            <li><a class="dropdown-item fs-7" href="#">لورم ایپسوم متن ساختگی</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="header__item dropdown  ms-4">
+                    <div class="header__profile dropdown-toggle pointer d-flex align-items-center"
+                         data-bs-toggle="dropdown">
+                        <div class="header__profile-img-container overflow-hidden rounded-circle">
+                            <img class="w-100" src="assets/images/7.jpg" alt="header-profile">
+                        </div>
+                        <div class="header__profile-content text-muted ms-2">
+                            <p class="fs-7 fw-bold m-0">امیر عظیمی</p>
+                            <p class="fs-7 m-0">سوپر ادمین</p>
+                        </div>
+                    </div>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center fs-7" href="#">
+                                <i class="bi bi-person me-2 fs-4"></i>
+                                <span>پروفایل</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center fs-7" href="#">
+                                <i class="bi bi-gear me-2 fs-5"></i>
+                                <span>تنظیمات</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center fs-7" href="#">
+                                <i class="bi bi-wallet me-2 fs-5"></i>
+                                <span>حساب کاربری</span>
+                            </a>
+                        </li>
+                        <li class="dropdown-divider"></li>
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center fs-7" href="#">
+                                <i class="bi bi-box-arrow-left me-2 fs-5"></i>
+                                <span>خروج</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </header>
-        <main class="main">
+
+
+        <main class="main mt-5">
         </main>
     </div>
 </div>

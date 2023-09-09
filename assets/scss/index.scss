@@ -32,7 +32,7 @@ body {
 // utilities
 
 .fs-7 {
-  font-size: 0.8rem;
+  font-size: 0.8rem !important;
 }
 
 .pointer {
@@ -44,9 +44,11 @@ body {
 ::-webkit-scrollbar {
   width: 0.45rem;
 }
+
 ::-webkit-scrollbar-track {
   background-color: #f1f1f1;
 }
+
 ::-webkit-scrollbar-thumb {
   background-color: #aaa;
   border-radius: 0.5rem;
@@ -71,6 +73,7 @@ body {
     background-color: #fff;
     transition: var(--transition);
     padding: 1rem;
+    z-index: 999;
     overflow-y: hidden;
 
     &.close {
@@ -144,7 +147,52 @@ body {
     transition: var(--transition);
     padding: 1rem;
     min-height: 100vh;
+
+    .header {
+
+      .header__item {
+
+        display: flex;
+        align-items: center;
+
+        .dropdown-toggle::after {
+          transform: translateY(0.65rem);
+        }
+
+        .dropdown-item {
+          padding: 0.5rem 0.8rem !important;
+        }
+
+        .header__badge {
+          font-family: sans-serif, tahoma;
+          background-color: #ff7976;
+          font-size: 0.6rem;
+          color: #fff;
+          width: 1.3rem;
+          height: 1.3rem;
+          top: -0.6rem;
+          right: -0.8rem;
+        }
+
+        .header__profile {
+          .header__profile-img-container {
+            width: 3rem;
+            height: 3rem;
+          }
+
+          .header__profile-content {
+            max-width: 25vw;
+            overflow-x: hidden;
+          }
+
+          &.dropdown-toggle::after {
+            display: none !important;
+          }
+        }
+      }
+    }
   }
+
 }
 
 
