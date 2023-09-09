@@ -39,6 +39,26 @@ body {
   cursor: pointer;
 }
 
+.bg-purple {
+  background-color: #9694ff;
+}
+
+.bg-blue {
+  background-color: #57caeb;
+}
+
+.bg-green {
+  background-color: #5ddab4;
+}
+
+.bg-red {
+  background-color: #ff7976;
+}
+
+.rounded-4 {
+  border-radius: 0.7rem !important;
+}
+
 
 // custom scrollbar
 ::-webkit-scrollbar {
@@ -149,7 +169,6 @@ body {
     min-height: 100vh;
 
     .header {
-
       .header__item {
 
         display: flex;
@@ -165,7 +184,6 @@ body {
 
         .header__badge {
           font-family: sans-serif, tahoma;
-          background-color: #ff7976;
           font-size: 0.6rem;
           color: #fff;
           width: 1.3rem;
@@ -190,6 +208,10 @@ body {
           }
         }
       }
+    }
+
+    .main {
+
     }
   }
 

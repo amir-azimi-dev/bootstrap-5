@@ -1,3 +1,4 @@
+// alpine
 document.addEventListener('alpine:init', () => {
     Alpine.data("toggleSidebar", () => ({
         open: (window.innerWidth >= 992),
@@ -7,3 +8,6 @@ document.addEventListener('alpine:init', () => {
         }
     }));
 });
+
+// pureCounter
+new PureCounter();
