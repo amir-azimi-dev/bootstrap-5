@@ -178,7 +178,7 @@
     <!-- sidebar end -->
 
 
-    <div class="content" :class="{'full-width': !open}">
+    <section class="content" :class="{'full-width': !open}">
         <!-- header start -->
         <header class="header d-flex justify-content-between align-items-center">
             <div class="header__item">
@@ -256,7 +256,7 @@
         <main class="main mt-4">
             <div class="row gy-4">
 
-                <div class="col-xl-9 middle">
+                <div class="middle col-xl-9">
                     <!-- stats start -->
                     <div class="stats">
                         <div class="row g-3">
@@ -314,17 +314,126 @@
 
 
                     <!-- chart end -->
-                    <div class="chart card bg-white border-0 rounded-4 my-3">
-                        <div class="card-body p-3 px-sm-4">
+                    <div class="chart card bg-white border-0 rounded-4 my-3 p-3 px-sm-4">
+                        <div class="card-body p-0">
                             <h5 class="fw-bold my-2">لورم ایپسوم</h5>
                             <div id="chart-div"></div>
                         </div>
                     </div>
                     <!-- chart end -->
 
+                    <div class="row">
+                        <div class="col-12 col-xxl-4">
+                            <!-- progress-bars end -->
+                            <div class="progress-bars card bg-white border-0 rounded-4 p-3 px-sm-4">
+                                <div class="card-body p-0">
+                                    <h5 class="fw-bold mt-2 mb-4">لورم ایپسوم متن</h5>
+
+                                    <div class="progress">
+                                        <div class="progress-bar bg-purple" role="progressbar" style="width: 85%;">85%
+                                        </div>
+                                    </div>
+                                    <p class="text-muted mt-1">لورم ایپسوم</p>
+                                    <hr class="my-3">
+
+                                    <div class="progress">
+                                        <div class="progress-bar bg-blue" role="progressbar" style="width: 50%;">50%
+                                        </div>
+                                    </div>
+                                    <p class="text-muted mt-1">لورم ایپسوم</p>
+                                    <hr class="my-3">
+
+                                    <div class="progress">
+                                        <div class="progress-bar bg-green" role="progressbar" style="width: 34%;">34%
+                                        </div>
+                                    </div>
+                                    <p class="text-muted">لورم ایپسوم</p>
+                                    <hr class="my-3">
+
+                                    <div class="progress mt-3">
+                                        <div class="progress-bar bg-red" role="progressbar" style="width: 46%;">46%
+                                        </div>
+                                    </div>
+                                    <p class="text-muted mt-1">لورم ایپسوم</p>
+                                    <hr>
+
+                                </div>
+                            </div>
+                            <!-- progress-bars end -->
+                        </div>
+
+                        <div class="col-12 col-xxl-8">
+                            <!-- last-comments start -->
+                            <div class="last-comments card bg-white border-0 rounded-4 p-3 px-sm-4">
+                                <div class="card-body p-0">
+                                    <h5 class="fw-bold mt-2 mb-4">لورم ایپسوم متن</h5>
+
+                                    <div class="table-responsive">
+                                        <table class="table table-hover align-middle">
+                                            <thead>
+                                            <tr>
+                                                <th>تصویر</th>
+                                                <th>نام کاربری</th>
+                                                <th class="pe-10">کامنت</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td class="profile-container">
+                                                    <div class="h-100 d-flex align-items-center bg-transparent">
+                                                        <img src="assets/images/4.jpg" alt=""
+                                                             class="w-100 rounded-circle">
+                                                    </div>
+                                                </td>
+                                                <td class="text-muted">@lorem_ipsum</td>
+                                                <td>
+                                                    <p class="table__comment text-muted">
+                                                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                                                        استفاده
+                                                        از طراحان گرافیک است.
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="profile-container">
+                                                    <div class="h-100 d-flex align-items-center">
+                                                        <img src="assets/images/1.jpg" alt=""
+                                                             class="w-100 rounded-circle">
+                                                    </div>
+                                                </td>
+                                                <td class="text-muted">@lorem_ipsum</td>
+                                                <td>
+                                                    <p class="table__comment text-muted">
+                                                        لورم ایپسوم متن ساختگی.
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="profile-container">
+                                                    <div class="h-100 d-flex align-items-center">
+                                                        <img src="assets/images/5.jpg" alt=""
+                                                             class="w-100 rounded-circle">
+                                                    </div>
+                                                </td>
+                                                <td class="text-muted">@lorem_ipsum</td>
+                                                <td>
+                                                    <p class="table__comment text-muted">
+                                                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم.
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- last-comments end -->
+                        </div>
+                    </div>
                 </div>
 
-                <div class="col-xl-3 left">
+                <div class="left col-xl-3">
                     <!-- profile start -->
                     <div class="profile card bg-white border-0 rounded-4">
                         <div class="card-body p-3 d-flex align-items-center">
@@ -341,8 +450,11 @@
                 </div>
             </div>
         </main>
-    </div>
+    </section>
 </div>
+
+<br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br>
 
 
 <!-- bootstrap -->

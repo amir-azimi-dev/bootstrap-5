@@ -30,6 +30,9 @@ body {
 }
 
 // utilities
+.pe-10 {
+  padding-left: 10rem !important;
+}
 
 .fs-7 {
   font-size: 0.8rem !important;
@@ -212,10 +215,34 @@ body {
 
     .main {
       .middle {
-        #chart-div {
-          height: 60vh;
-          width: 100%;
-          direction: ltr;
+        .chart {
+          #chart-div {
+            height: 60vh;
+            width: 100%;
+            direction: ltr;
+          }
+        }
+
+        .progress-bars {
+          .progress {
+            height: 1.3rem;
+            font-family: Tahoma, sans-serif;
+          }
+        }
+
+        .last-comments {
+          .table  {
+            .profile-container {
+              width: 4rem;
+              height: 4rem;
+            }
+
+            .table__comment {
+              max-height: 5.5rem !important;
+              overflow-y: auto;
+              margin: 0;
+            }
+          }
         }
       }
 
