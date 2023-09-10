@@ -24,9 +24,16 @@
       }
 
       .main {
-        .stat__title {
-          font-size: 0.7rem !important;
-          white-space: normal !important;
+
+        .stats {
+          .card {
+            padding: 16px !important;
+
+            .stat__title {
+              font-size: 0.7rem !important;
+              white-space: normal !important;
+            }
+          }
         }
       }
     }

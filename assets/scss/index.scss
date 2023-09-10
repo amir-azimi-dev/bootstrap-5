@@ -211,7 +211,23 @@ body {
     }
 
     .main {
+      .middle {
+        #chart-div {
+          height: 60vh;
+          width: 100%;
+          direction: ltr;
+        }
+      }
 
+      .left {
+
+        .profile {
+          .profile__img-container {
+            width: 38%;
+            max-width: 5rem;
+          }
+        }
+      }
     }
   }
 
