@@ -30,6 +30,10 @@ body {
 }
 
 // utilities
+.ltr {
+  direction: ltr;
+}
+
 .pe-10 {
   padding-left: 10rem !important;
 }
@@ -215,14 +219,6 @@ body {
 
     .main {
       .middle {
-        .chart {
-          #chart-div {
-            height: 60vh;
-            width: 100%;
-            direction: ltr;
-          }
-        }
-
         .progress-bars {
           .progress {
             height: 1.3rem;
@@ -231,7 +227,7 @@ body {
         }
 
         .last-comments {
-          .table  {
+          .table {
             .profile-container {
               width: 4rem;
               height: 4rem;
@@ -253,6 +249,24 @@ body {
             width: 38%;
             max-width: 5rem;
           }
+        }
+
+        .users {
+          .users__img-container {
+            width: 38%;
+            max-width: 4.5rem;
+          }
+
+          .users__link {
+            background-color: #ebf3ff;
+            color: #002152;
+            width: 100%;
+          }
+        }
+
+        .doughnut-chart {
+          width: 100%;
+          max-width: 20rem;
         }
       }
     }

@@ -315,16 +315,16 @@
 
                     <!-- chart end -->
                     <div class="chart card bg-white border-0 rounded-4 my-3 p-3 px-sm-4">
-                        <div class="card-body p-0">
-                            <h5 class="fw-bold my-2">لورم ایپسوم</h5>
-                            <div id="chart-div"></div>
+                        <h5 class="fw-bold my-2">لورم ایپسوم</h5>
+                        <div class="chart-bar-container card-body p-0">
+                            <canvas class="mx-auto w-100" id="chart-bar"></canvas>
                         </div>
                     </div>
                     <!-- chart end -->
 
                     <div class="row">
+                        <!-- progress-bars end -->
                         <div class="col-12 col-xxl-4">
-                            <!-- progress-bars end -->
                             <div class="progress-bars card bg-white border-0 rounded-4 p-3 px-sm-4">
                                 <div class="card-body p-0">
                                     <h5 class="fw-bold mt-2 mb-4">لورم ایپسوم متن</h5>
@@ -359,11 +359,11 @@
 
                                 </div>
                             </div>
-                            <!-- progress-bars end -->
                         </div>
+                        <!-- progress-bars end -->
 
+                        <!-- last-comments start -->
                         <div class="col-12 col-xxl-8">
-                            <!-- last-comments start -->
                             <div class="last-comments card bg-white border-0 rounded-4 p-3 px-sm-4">
                                 <div class="card-body p-0">
                                     <h5 class="fw-bold mt-2 mb-4">لورم ایپسوم متن</h5>
@@ -385,7 +385,7 @@
                                                              class="w-100 rounded-circle">
                                                     </div>
                                                 </td>
-                                                <td class="text-muted">@lorem_ipsum</td>
+                                                <td class="text-muted ltr">@lorem_ipsum</td>
                                                 <td>
                                                     <p class="table__comment text-muted">
                                                         لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
@@ -401,7 +401,7 @@
                                                              class="w-100 rounded-circle">
                                                     </div>
                                                 </td>
-                                                <td class="text-muted">@lorem_ipsum</td>
+                                                <td class="text-muted ltr">@lorem_ipsum</td>
                                                 <td>
                                                     <p class="table__comment text-muted">
                                                         لورم ایپسوم متن ساختگی.
@@ -415,7 +415,7 @@
                                                              class="w-100 rounded-circle">
                                                     </div>
                                                 </td>
-                                                <td class="text-muted">@lorem_ipsum</td>
+                                                <td class="text-muted ltr">@lorem_ipsum</td>
                                                 <td>
                                                     <p class="table__comment text-muted">
                                                         لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم.
@@ -428,8 +428,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- last-comments end -->
                         </div>
+                        <!-- last-comments end -->
                     </div>
                 </div>
 
@@ -441,21 +441,65 @@
                                 <img class="w-100" src="assets/images/7.jpg" alt="header-profile">
                             </div>
                             <div class="header__profile-content ms-3">
-                                <p class=" fw-bold m-0">امیر عظیمی</p>
-                                <p class="fs-7 text-muted m-0">@amir_azimi</p>
+                                <p class=" fw-bold my-1">امیر عظیمی</p>
+                                <p class="text-muted my-1 ltr">@amir_azimi</p>
                             </div>
                         </div>
                     </div>
                     <!-- profile end -->
+
+                    <!-- users start -->
+                    <div class="users card bg-white border-0 rounded-4 my-3 p-3">
+                        <h5 class="fw-bold mt-2 mb-4">لورم ایپسوم</h5>
+                        <div class="card-body p-0">
+                            <div class="user d-flex align-items-center mb-3">
+                                <div class="users__img-container overflow-hidden rounded-circle">
+                                    <img class="w-100" src="assets/images/5.jpg" alt="header-profile">
+                                </div>
+                                <div class="users__info ms-3">
+                                    <p class="fw-bold my-1">لورم ایپسوم</p>
+                                    <p class="text-muted my-1 ltr">@lorem_ipsum</p>
+                                </div>
+                            </div>
+                            <div class="user d-flex align-items-center mb-3">
+                                <div class="users__img-container overflow-hidden rounded-circle">
+                                    <img class="w-100" src="assets/images/4.jpg" alt="header-profile">
+                                </div>
+                                <div class="users__info ms-3">
+                                    <p class="fw-bold my-1">لورم ایپسوم</p>
+                                    <p class="text-muted my-1 ltr">@lorem_ipsum</p>
+                                </div>
+                            </div>
+                            <div class="user d-flex align-items-center mb-3">
+                                <div class="users__img-container overflow-hidden rounded-circle">
+                                    <img class="w-100" src="assets/images/1.jpg" alt="header-profile">
+                                </div>
+                                <div class="users__info ms-3">
+                                    <p class="fw-bold my-1">لورم ایپسوم</p>
+                                    <p class="text-muted my-1 ltr">@lorem_ipsum</p>
+                                </div>
+                            </div>
+
+                            <a href="#" class="users__link btn mb-2">نمایش کاربران</a>
+                        </div>
+                    </div>
+
+                    <!-- users end -->
+
+                    <!-- doughnut-chart start -->
+                    <div class="doughnut-chart card bg-white border-0 rounded-4 my-3 p-3">
+                        <h5 class="fw-bold mt-2 mb-4">لورم ایپسوم</h5>
+                        <div class="card-body p-0 doughnut-chart mx-auto">
+                            <canvas class="my-4" id="doughnut-chart-div"></canvas>
+                        </div>
+                    </div>
+                    <!-- doughnut-chart end -->
+
                 </div>
             </div>
         </main>
     </section>
 </div>
-
-<br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br>
-
 
 <!-- bootstrap -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
@@ -465,10 +509,8 @@
 <!-- pureCounter -->
 <script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js"></script>
 
-<!-- amChart -->
-<script src="https://cdn.amcharts.com/lib/5/index.js"></script>
-<script src="https://cdn.amcharts.com/lib/5/xy.js"></script>
-<script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+<!-- chart js -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
 <script src="assets/js/index.js"></script>
 </body>
